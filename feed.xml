@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tele Paddock</title>
+    <link>https://telepaddock.github.io/podcast/</link>
+    <atom:link href="https://telepaddock.github.io/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Os bastidores da Fórmula 1 em quadrinhos: o Estrategista traz os dados da telemetria, a Insider traz o que se fala no paddock. Notícias reais da imprensa do mundo todo, debate sem filtro e a sua opinião nos comentários. Podcast independente, sem vínculo com a Fórmula 1, FIA ou equipes.</description>
+    <language>pt-br</language>
+    <itunes:author>Tele Paddock</itunes:author>
+    <itunes:owner>
+      <itunes:name>Tele Paddock</itunes:name>
+      <itunes:email>telepaddock@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://telepaddock.github.io/podcast/cover.jpg"/>
+    <itunes:category text="Sports"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Guerra Aberta na Ferrari e Provocação Sem Filtro em Las Vegas</title>
+      <description>Guerra Aberta na Ferrari e Provocação Sem Filtro em Las Vegas
+
+Neste episódio:
+1. Guerra Interna na Ferrari: Hamilton e Leclerc Colidem
+2. Verstappen vs Russell: A Treta Escala Após Vitória
+3. O Drama da Mercedes: Bug de Antonelli e Batida de Russell
+4. McLaren Resgata Pódio Duplo e Piastri Peita o Rádio
+
+VOTE NOS COMENTÁRIOS: Quem foi o maior culpado pela colisão interna da Ferrari em Las Vegas: Leclerc ou Hamilton?
+
+Gostou? Inscreva-se, deixe o like e conte nos comentários do YouTube o que você achou: a sua opinião entra no próximo episódio.
+
+Capítulos:
+00:00 Abertura
+00:50 Manchetes
+03:19 O debate
+07:20 Radar social
+08:42 Palpites
+10:04 Encerramento
+
+Fontes:
+- FIA — F1 – Verstappen wins action-packed Las Vegas Grand Prix as late Mercedes drama delivers McLaren double podium
+  https://www.fia.com/news/f1-verstappen-wins-action-packed-las-vegas-grand-prix-late-mercedes-drama-delivers-mclaren
+- FIA — F1 - 2026 Las Vegas Grand Prix Post-Race Press Conference Transcript
+  https://www.fia.com/news/f1-2026-las-vegas-grand-prix-post-race-press-conference-transcript
+
+Repercussão na imprensa: imprensa alemã, imprensa espanhola, imprensa especializada britânica, imprensa esportiva americana, imprensa francesa, imprensa italiana.
+
+The Strategist e The Paddock Insider são personagens fictícios com vozes sintéticas. Fatos vêm das fontes oficiais listadas; opinião e rumor são sempre identificados como tal.
+Personagens e vozes sintéticos e fictícios · Conteúdo independente, sem vínculo com F1 ou FIA</description>
+      <itunes:summary>Guerra Aberta na Ferrari e Provocação Sem Filtro em Las Vegas
+
+Neste episódio:
+1. Guerra Interna na Ferrari: Hamilton e Leclerc Colidem
+2. Verstappen vs Russell: A Treta Escala Após Vitória
+3. O Drama da Mercedes: Bug de Antonelli e Batida de Russell
+4. McLaren Resgata Pódio Duplo e Piastri Peita o Rádio
+
+VOTE NOS COMENTÁRIOS: Quem foi o maior culpado pela colisão interna da Ferrari em Las Vegas: Leclerc ou Hamilton?
+
+Gostou? Inscreva-se, deixe o like e conte nos comentários do YouTube o que você achou: a sua opinião entra no próximo episódio.
+
+Capítulos:
+00:00 Abertura
+00:50 Manchetes
+03:19 O debate
+07:20 Radar social
+08:42 Palpites
+10:04 Encerramento
+
+Fontes:
+- FIA — F1 – Verstappen wins action-packed Las Vegas Grand Prix as late Mercedes drama delivers McLaren double podium
+  https://www.fia.com/news/f1-verstappen-wins-action-packed-las-vegas-grand-prix-late-mercedes-drama-delivers-mclaren
+- FIA — F1 - 2026 Las Vegas Grand Prix Post-Race Press Conference Transcript
+  https://www.fia.com/news/f1-2026-las-vegas-grand-prix-post-race-press-conference-transcript
+
+Repercussão na imprensa: imprensa alemã, imprensa espanhola, imprensa especializada britânica, imprensa esportiva americana, imprensa francesa, imprensa italiana.
+
+The Strategist e The Paddock Insider são personagens fictícios com vozes sintéticas. Fatos vêm das fontes oficiais listadas; opinião e rumor são sempre identificados como tal.
+Personagens e vozes sintéticos e fictícios · Conteúdo independente, sem vínculo com F1 ou FIA</itunes:summary>
+      <guid isPermaLink="false">f1me-4-10</guid>
+      <pubDate>Sun, 22 Nov 2026 18:38:12 +0000</pubDate>
+      <enclosure url="https://telepaddock.github.io/podcast/episodes/4-10.mp3" length="10397411" type="audio/mpeg"/>
+      <itunes:duration>00:10:50</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
