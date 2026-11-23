@@ -53,7 +53,7 @@
   .ouvir__grid .t-card { display: block; }
   .ouvir__grid .t-small { display: block; color: var(--p-inv-muted); }
   .fontes__frame { aspect-ratio: 8 / 3; }
-  .ouvir__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; }
+  .ouvir__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; gap: var(--s-4); }
   .ouvir__corte { aspect-ratio: 4 / 3; }
   .ouvir__corte .frame__img { object-position: 50% 4%; }
   .perguntas__frame { aspect-ratio: 16 / 9; margin-top: var(--s-7); border-radius: var(--r-lg); overflow: hidden; }
@@ -62,14 +62,15 @@
   /* the strong word turns to the show yellow darkened to text contrast on the paper ground (the yellow itself is 1.3:1) */
   #fontes-texto { --accent: #8a5d00; }
   #apresentadores .tile img { aspect-ratio: 2 / 1; object-fit: cover; object-position: 50% 0; }
-  .ouvir__grid a.card { flex-direction: row; align-items: center; gap: var(--s-3); min-height: 88px; height: auto; padding: var(--s-4); }
+  .ouvir__grid a.card { flex-direction: row; align-items: center; gap: var(--s-3); min-height: 72px; height: auto; padding: var(--s-4); }
   
   @media (max-width: 1023px) { #episodio .frame--split { aspect-ratio: 16 / 9; } .fontes__frame { aspect-ratio: 16 / 9; } }
-  @media (min-width: 640px) and (max-width: 1023px) { #apresentadores .tile img { aspect-ratio: 4 / 3; } }
+  @media (min-width: 640px) and (max-width: 1023px) { #apresentadores .tile img { aspect-ratio: 1 / 1; } .fontes__frame { aspect-ratio: 4 / 3; } }
   @media (min-width: 800px) and (max-width: 1023px) { #apresentadores .tile img { aspect-ratio: 1 / 1; } }
   @media (max-width: 639px) { .fontes__frame { aspect-ratio: 1 / 1; } .fontes__frame .frame__img { object-position: 30% 50%; } }
 
   @media (max-width: 1023px) { .ouvir__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .ouvir__corte { aspect-ratio: 16 / 9; margin-top: var(--s-5); } .ouvir__corte .frame__img { object-position: 50% 4%; } }
+  @media (min-width: 1024px) and (max-width: 1279px) { .perguntas__frame { aspect-ratio: 4 / 3; } }
   @media (min-width: 1024px) and (max-width: 1279px) { .ouvir__grid a.card { min-height: 72px; } .ouvir__grid .t-small { display: none; } }
   @media (min-width: 640px) and (max-width: 1023px) {
     .ep__topics { display: none; }
@@ -119,7 +120,7 @@
       <div class="hero__head">
         <div>
           <h1 id="hero-h">Podcast de Fórmula 1 em quadrinhos</h1>
-          <p class="hero__lead">O Estrategista lê a telemetria e a Insider conta o que se fala no paddock. Episódios de 10 a 18 minutos no YouTube, no Spotify e no Deezer.</p>
+          <p class="hero__lead">O Estrategista lê a telemetria e a Insider conta o que se fala no paddock. Episódios de 10 a 18 minutos no YouTube, no Spotify, no Apple Podcasts e no Deezer.</p>
         </div>
         <div class="btn-row"><a class="btn btn--primary" href="https://www.youtube.com/@telepaddock">Assistir no YouTube<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="#episodio">Ouvir o último episódio</a></div>
       </div>
@@ -147,7 +148,7 @@
           <audio class="ep__audio" controls preload="none" src="episodes/4-10.mp3" data-ep-audio aria-label="Ouvir o episódio"></audio>
         </div>
         <div class="frame frame--photo frame--split span-6 start-7">
-          <img class="frame__img" src="img/estudio-debate.jpg" srcset="img/estudio-debate-800.jpg 800w, img/estudio-debate.jpg 1600w" sizes="(min-width: 1024px) 628px, 90vw" width="1600" height="900" decoding="async" alt="Quadro do episódio: a Insider fala em um balão sobre a Ferrari enquanto o Estrategista ajeita os óculos, ao lado do cartão do debate" loading="lazy" data-source="client" data-subject="um quadro do episódio">
+          <img class="frame__img" src="img/estudio-debate.jpg" srcset="img/estudio-debate-800.jpg 800w, img/estudio-debate.jpg 1600w" sizes="(max-width: 639px) 1600px, (min-width: 1024px) 900px, 100vw" width="1600" height="900" decoding="async" alt="Quadro do episódio: a Insider fala em um balão sobre a Ferrari enquanto o Estrategista ajeita os óculos, ao lado do cartão do debate" loading="lazy" data-source="client" data-subject="um quadro do episódio">
         </div>
       </div>
     </div>
@@ -160,7 +161,7 @@
         <p>O cartão de cada assunto mostra quem publicou e um carimbo: confirmado quando a fonte é oficial, não confirmado quando só a imprensa noticiou.</p>
       </div>
       <div class="frame frame--photo fontes__frame">
-        <img class="frame__img" src="img/estudio-manchetes.jpg" srcset="img/estudio-manchetes-800.jpg 800w, img/estudio-manchetes.jpg 1600w" sizes="(min-width: 1440px) 1280px, 90vw" width="1600" height="900" decoding="async" alt="Quadro das manchetes: o cartão amarelo diz McLaren Resgata Pódio Duplo, com a fonte FIA e o carimbo confirmado, e a Insider narra a notícia em um balão" loading="lazy" data-source="client" data-subject="o cartão de fonte de um episódio">
+        <img class="frame__img" src="img/estudio-manchetes.jpg" srcset="img/estudio-manchetes-800.jpg 800w, img/estudio-manchetes.jpg 1600w" sizes="(max-width: 639px) 610px, (min-width: 1440px) 1280px, 100vw" width="1600" height="900" decoding="async" alt="Quadro das manchetes: o cartão amarelo diz McLaren Resgata Pódio Duplo, com a fonte FIA e o carimbo confirmado, e a Insider narra a notícia em um balão" loading="lazy" data-source="client" data-subject="o cartão de fonte de um episódio">
       </div>
     </div>
   </section>
@@ -173,12 +174,12 @@
       </div>
       <div class="grid">
         <article class="tile tile--portrait span-6">
-          <img src="img/estrategista.jpg" srcset="img/estrategista-700.jpg 700w, img/estrategista.jpg 1280w" sizes="(min-width: 1024px) 628px, 90vw" width="1280" height="640" decoding="async" alt="O Estrategista segurando um tablet com gráficos de telemetria" loading="lazy" data-source="client" data-subject="o Estrategista">
+          <img src="img/estrategista.jpg" srcset="img/estrategista-700.jpg 700w, img/estrategista.jpg 1280w" sizes="(max-width: 639px) 684px, (min-width: 1024px) 628px, 100vw" width="1280" height="640" decoding="async" alt="O Estrategista segurando um tablet com gráficos de telemetria" loading="lazy" data-source="client" data-subject="o Estrategista">
           <h3>O Estrategista</h3>
           <p>Fala de regulamento, estratégia de pneus, dados de volta e decisões de box, sempre com o número na mão.</p>
         </article>
         <article class="tile tile--portrait span-6">
-          <img src="img/insider.jpg" srcset="img/insider-700.jpg 700w, img/insider.jpg 1280w" sizes="(min-width: 1024px) 628px, 90vw" width="1280" height="640" decoding="async" alt="A Insider olhando o celular" loading="lazy" data-source="client" data-subject="a Insider">
+          <img src="img/insider.jpg" srcset="img/insider-700.jpg 700w, img/insider.jpg 1280w" sizes="(max-width: 639px) 684px, (min-width: 1024px) 628px, 100vw" width="1280" height="640" decoding="async" alt="A Insider olhando o celular" loading="lazy" data-source="client" data-subject="a Insider">
           <h3>A Insider</h3>
           <p>Traz as rivalidades, as polêmicas dos boxes e o que os torcedores estão dizendo nas redes.</p>
         </article>
@@ -199,11 +200,13 @@
       <div class="span-5">
       <div class="section-head">
         <h2 id="ouvir-h">Plataformas do Tele Paddock</h2>
-        <p>O episódio completo sai no YouTube, no Spotify e no Deezer. Os cortes de um minuto saem nas redes.</p>
+        <p>O episódio completo sai no YouTube e nos apps de podcast. Os cortes de um minuto saem nas redes.</p>
       </div>
       <ul class="ouvir__grid">
         <li><a class="card" href="https://www.youtube.com/@telepaddock"><span class="ic-tile ic-tile--48"><img class="ic" data-icon="youtube" src="assets/icons/youtube.svg" alt="" width="29" height="29" loading="lazy" decoding="async"></span><span><span class="t-card">YouTube</span><span class="t-small">Episódios em vídeo</span></span></a></li>
         <li><a class="card" href="https://open.spotify.com/show/6IFaer1QbEhNkYz6blzVr1"><span class="ic-tile ic-tile--48"><img class="ic" data-icon="spotify" src="assets/icons/spotify.svg" alt="" width="29" height="29" loading="lazy" decoding="async"></span><span><span class="t-card">Spotify</span><span class="t-small">Episódios em áudio</span></span></a></li>
+        <li><a class="card" href="https://podcasts.apple.com/br/podcast/id6838286726"><span class="ic-tile ic-tile--48"><img class="ic" data-icon="si:applepodcasts" src="assets/icons/applepodcasts.svg" alt="" width="22" height="29" loading="lazy" decoding="async"></span><span><span class="t-card">Apple Podcasts</span><span class="t-small">Episódios em áudio</span></span></a></li>
+        <li><a class="card" href="https://music.amazon.com.br/podcasts/e534ea24-6edc-4090-9760-cd56c6a17e4d"><span class="ic-tile ic-tile--48"><img class="ic ic-ink" data-icon="ui:music" src="assets/icons/ui-music.svg" alt="" width="29" height="29" loading="lazy" decoding="async"></span><span><span class="t-card">Amazon Music</span><span class="t-small">Episódios em áudio</span></span></a></li>
         <li><a class="card" href="https://www.deezer.com/en/show/1003786171"><span class="ic-tile ic-tile--48"><img class="ic" data-icon="si:deezer" src="assets/icons/deezer.svg" alt="" width="29" height="29" loading="lazy" decoding="async"></span><span><span class="t-card">Deezer</span><span class="t-small">Episódios em áudio</span></span></a></li>
         <li><a class="card" href="https://www.instagram.com/telepaddock/"><span class="ic-tile ic-tile--48"><img class="ic ic-ink" data-icon="instagram" src="assets/icons/instagram.svg" alt="" width="29" height="29" loading="lazy" decoding="async"></span><span><span class="t-card">Instagram</span><span class="t-small">Cortes em Reels</span></span></a></li>
         <li><a class="card" href="https://www.tiktok.com/@telepaddock"><span class="ic-tile ic-tile--48"><img class="ic" data-icon="tiktok" src="assets/icons/tiktok.svg" alt="" width="29" height="29" loading="lazy" decoding="async"></span><span><span class="t-card">TikTok</span><span class="t-small">Cortes em vídeo</span></span></a></li>
@@ -213,7 +216,7 @@
       </ul>
       </div>
       <div class="frame frame--photo ouvir__corte span-6 start-7">
-        <img class="frame__img" src="img/corte-1.jpg" srcset="img/corte-1-600.jpg 600w, img/corte-1.jpg 1080w" sizes="(min-width: 1024px) 628px, 90vw" width="1080" height="1920" decoding="async" alt="Corte vertical do episódio com o nome Tele Paddock no alto, o tema O Drama da Mercedes e o quadro da Insider comentando" loading="lazy" data-source="client" data-subject="um corte vertical do episódio">
+        <img class="frame__img" src="img/corte-1.jpg" srcset="img/corte-1-600.jpg 600w, img/corte-1.jpg 1080w" sizes="(min-width: 640px) 1080px, 600px" width="1080" height="1920" decoding="async" alt="Corte vertical do episódio com o nome Tele Paddock no alto, o tema O Drama da Mercedes e o quadro da Insider comentando" loading="lazy" data-source="client" data-subject="um corte vertical do episódio">
       </div>
       </div>
     </div>
@@ -226,7 +229,7 @@
           <div class="section-head"><h2 id="perguntas-h">Perguntas</h2><p>Outra dúvida? Escreva para o programa.</p></div>
           <a class="link" href="mailto:telepaddock@gmail.com">Escrever para o programa</a>
           <div class="perguntas__frame">
-            <img src="img/estudio-palpites.jpg" srcset="img/estudio-palpites-700.jpg 700w, img/estudio-palpites.jpg 1200w" sizes="(min-width: 1024px) 519px, 90vw" width="1200" height="675" decoding="async" alt="Quadro dos palpites: o Estrategista ajeita os óculos e diz em um balão que a matemática dos construtores favorece a McLaren" loading="lazy" data-source="client" data-subject="um quadro do episódio">
+            <img src="img/estudio-palpites.jpg" srcset="img/estudio-palpites-700.jpg 700w, img/estudio-palpites.jpg 1200w" sizes="(max-width: 639px) 1200px, (min-width: 1024px) 600px, 100vw" width="1200" height="675" decoding="async" alt="Quadro dos palpites: o Estrategista ajeita os óculos e diz em um balão que a matemática dos construtores favorece a McLaren" loading="lazy" data-source="client" data-subject="um quadro do episódio">
           </div>
         </div>
         <div class="faq span-6 start-7">
@@ -247,7 +250,7 @@
         <div><h2 id="close-h">Assista ao próximo episódio</h2><p class="t-lead">Inscreva-se no canal para receber o aviso de cada episódio novo.</p></div>
         <a class="btn btn--primary" href="https://www.youtube.com/@telepaddock">Assistir no YouTube<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
       </div>
-      <div class="close__media"><img src="img/capa.jpg" srcset="img/capa-800.jpg 800w, img/capa.jpg 1640w" sizes="(min-width: 1440px) 1280px, 90vw" width="1640" height="624" decoding="async" alt="A faixa amarela com o nome Tele Paddock entre o Estrategista e a Insider" loading="lazy" data-source="client" data-subject="a arte do programa"></div>
+      <div class="close__media"><img src="img/capa.jpg" srcset="img/capa-800.jpg 800w, img/capa.jpg 1640w" sizes="(max-width: 639px) 1640px, (min-width: 1440px) 1280px, 100vw" width="1640" height="624" decoding="async" alt="A faixa amarela com o nome Tele Paddock entre o Estrategista e a Insider" loading="lazy" data-source="client" data-subject="a arte do programa"></div>
     </div>
     <div class="closing__links">
       <div class="grid">
