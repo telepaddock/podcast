@@ -74,10 +74,12 @@ Repercussão na imprensa: imprensa alemã, imprensa brasileira, imprensa espanho
 The Strategist e The Paddock Insider são personagens fictícios com vozes sintéticas. Fatos vêm das fontes oficiais listadas; opinião e rumor são sempre identificados como tal.
 Personagens e vozes sintéticos e fictícios · Conteúdo independente, sem vínculo com F1 ou FIA</itunes:summary>
       <guid isPermaLink="false">f1me-5-11</guid>
-      <pubDate>Mon, 23 Nov 2026 20:29:27 +0000</pubDate>
+      <pubDate>Mon, 23 Nov 2026 20:29:38 +0000</pubDate>
       <enclosure url="https://telepaddock.github.io/podcast/episodes/5-11.mp3" length="13811784" type="audio/mpeg"/>
       <itunes:duration>00:14:23</itunes:duration>
       <itunes:episode>2</itunes:episode>
+      <itunes:image href="https://telepaddock.github.io/podcast/episodes/5-11.jpg"/>
+      <link>https://telepaddock.github.io/podcast/episodios/002-verstappen-humilha-russell-karma-em-las-vegas-guerra-na-ferr.html</link>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
@@ -148,6 +150,8 @@ Personagens e vozes sintéticos e fictícios · Conteúdo independente, sem vín
       <enclosure url="https://telepaddock.github.io/podcast/episodes/4-10.mp3" length="10397411" type="audio/mpeg"/>
       <itunes:duration>00:10:50</itunes:duration>
       <itunes:episode>1</itunes:episode>
+      <itunes:image href="https://telepaddock.github.io/podcast/episodes/4-10.jpg"/>
+      <link>https://telepaddock.github.io/podcast/episodios/001-guerra-aberta-na-ferrari-e-provocacao-sem-filtro-em-las-vega.html</link>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
