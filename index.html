@@ -46,6 +46,7 @@
 <style>
   .nav__logo img { width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--p-ink); }
   .ep__audio { width: 100%; margin-top: var(--s-5); }
+  .ep__page { display: inline-flex; align-items: center; min-height: 44px; margin-top: var(--s-3); }
   .ep__topics { margin: var(--s-4) 0 0; padding: 0; list-style-position: inside; }
   .ep__topics li { margin: var(--s-1) 0; }
   .ouvir__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-5); }
@@ -136,16 +137,17 @@
         <div class="span-5">
           <div class="section-head">
             <h2 id="episodio-h">Último episódio</h2>
-            <p class="muted" data-ep-meta>22 de novembro de 2026, 10 min 50 s.</p>
+            <p class="muted" data-ep-meta>23 de novembro de 2026, 14 min 23 s.</p>
           </div>
-          <p class="t-lead" data-ep-title>Guerra Aberta na Ferrari e Provocação Sem Filtro em Las Vegas</p>
+          <p class="t-lead" data-ep-title>VERSTAPPEN HUMILHA RUSSELL? KARMA EM LAS VEGAS, GUERRA NA FERRARI E O FUTURO DE RAFAEL CÂMARA</p>
           <ol class="ep__topics" data-ep-topics>
-            <li>Guerra Interna na Ferrari: Hamilton e Leclerc Colidem</li>
-            <li>Verstappen vs Russell: A Treta Escala Após Vitória</li>
-            <li>O Drama da Mercedes: Bug de Antonelli e Batida de Russell</li>
-            <li>McLaren Resgata Pódio Duplo e Piastri Peita o Rádio</li>
+            <li>Verstappen x Russell: karma, batida e guerra de declarações</li>
+            <li>Ferrari em crise: Hamilton quer prioridade e Leclerc está na mira</li>
+            <li>Rafael Câmara: F1 agora, título da F2 depois?</li>
+            <li>Antonelli, Verstappen e a vitória que poderia ter acontecido</li>
           </ol>
-          <audio class="ep__audio" controls preload="none" src="episodes/4-10.mp3" data-ep-audio aria-label="Ouvir o episódio"></audio>
+          <audio class="ep__audio" controls preload="none" src="episodes/5-11.mp3" data-ep-audio aria-label="Ouvir o episódio"></audio>
+          <a class="link ep__page" href="episodios/002-verstappen-humilha-russell-karma-em-las-vegas-guerra-na-ferr.html" data-ep-page>Ler a transcrição do episódio</a>
         </div>
         <div class="frame frame--photo frame--split span-6 start-7">
           <img class="frame__img" src="img/estudio-debate.jpg" srcset="img/estudio-debate-800.jpg 800w, img/estudio-debate.jpg 1600w" sizes="(max-width: 639px) 1600px, (min-width: 1024px) 900px, 100vw" width="1600" height="900" decoding="async" alt="Quadro do episódio: a Insider fala em um balão sobre a Ferrari enquanto o Estrategista ajeita os óculos, ao lado do cartão do debate" loading="lazy" data-source="client" data-subject="um quadro do episódio">
@@ -298,6 +300,8 @@
       }
       const url = item.querySelector("enclosure")?.getAttribute("url");
       if (url) document.querySelector("[data-ep-audio]").src = url;
+      const page = text("link");
+      if (page) document.querySelector("[data-ep-page]").href = page;
     }
   } catch { /* the static episode stays */ }
 </script>
